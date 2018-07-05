@@ -1,0 +1,8 @@
+def normalize(name):
+	L2=[]
+	L2=[x.lower() for x in name]
+	L2[0]=L2[0].upper()
+	return L2
+L1 = ['adam', 'LISA', 'barT']
+L3 =list(map(normalize,L1))
+print(L3)
