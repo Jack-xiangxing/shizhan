@@ -1,5 +1,5 @@
 # 迭代
-# -*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 
 def findMinAndMax(L):
 	
@@ -20,5 +20,4 @@ def findMinAndMax(L):
         max=x
 	
     return min,max
-
-print(findMinAndMax([7，1,3,5,6]))
+print(findMinAndMax([1,3,5,6]))
