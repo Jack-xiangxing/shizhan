@@ -1,5 +1,6 @@
 # 迭代
 # -*- coding: utf-8 -*-
+
 def findMinAndMax(L):
 	min=max=L[0]
 	if L==[]:
