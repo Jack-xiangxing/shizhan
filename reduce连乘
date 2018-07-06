@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+from functools import reduce
+def mul(x,y):
+	z=x * y
+	return z
+def prod(*L):   
+	
+	return reduce(mul,L)
+print(prod(3,5,7,9))
