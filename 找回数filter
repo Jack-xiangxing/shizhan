@@ -1,0 +1,5 @@
+
+def is_palindrome(n):
+	strint=int(str(n)[::-1])
+	return strint==n	
+print(list(filter(is_palindrome,range(1, 1000))))
