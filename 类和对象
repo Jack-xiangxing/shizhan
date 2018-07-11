@@ -10,6 +10,7 @@ class Student(object):
             return 'B'
         else:
             return 'C'
+            
 lisa = Student('Lisa', 99)
 bart = Student('Bart', 59)
 print(lisa.name, lisa.get_grade())
