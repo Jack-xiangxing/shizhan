@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+class Screen(object):
+	@property             #装饰器
+	def width(self):         #读到值
+		return self._width
+	@width.setter         #@property创建的装饰器
+	def width(self,value):  # 设置值
+		self._width=value
+	
+	@property
+	def height(self):
+		return self._height
+	@height.setter
+	def height(self,value):
+		self._height=value
+	
+	@property
+	def resolution (self):    #只能读
+		return self._height*self._width
+	
+
+# 测试:
+s = Screen()
+s.width = 1024
+s.height = 768
+print('resolution =', s.resolution)
+if s.resolution == 786432:
+    print('测试通过!')
+else:
+    print('测试失败!')
